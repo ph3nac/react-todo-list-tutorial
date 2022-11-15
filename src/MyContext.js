@@ -9,8 +9,8 @@ export function DataList(props) {
     console.log(data);
   }, [data]);
   return (
-    <DataContext.Provider value={[data,setData]}>
-    {props.children}
+    <DataContext.Provider value={[data, setData]}>
+      {props.children}
     </DataContext.Provider>
-  )
+  );
 }
