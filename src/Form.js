@@ -5,6 +5,7 @@ import { nanoid } from "nanoid";
 
 export default function Form() {
   const [data, setData] = useContext(DataContext);
+
   const { register, handleSubmit } = useForm();
   const onSubmit = (input) => {
     const id = nanoid();
